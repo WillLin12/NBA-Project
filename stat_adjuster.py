@@ -6,6 +6,7 @@ stats['reb'] = int(input('Enter reb'))
 stats['ast'] = int(input('Enter ast'))
 stats['stls'] = int(input('Enter stls'))
 stats['blks'] = int(input('Enter blks'))
-
-
-print(stats)
+stats['tpm'] = int(input('Enter threes'))
+stats['fgm'] = int(input('Enter fgm'))
+stats['ftm'] = int(input('Enter ftm'))
+stats['tov'] = int(input('Enter turnovers'))
