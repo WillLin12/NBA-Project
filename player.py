@@ -10,12 +10,34 @@ class Player:
         self.__blks = blks
         self.__tpm = tpm
         self.__fgm = fgm
+        self.__fga = fga
         self.__ftm = ftm 
+        self.__fta = fta
         self.__tov = tov
     
+    def calculate_pct(self):
+        return self.__fgm / self.__fga
+
+
+    def calculate_ftpct(self):
+        return self.__ftm / self.__fta
+
+
     
     def get_id(self):
         return self.__id
+
+    def set_fta(self, p_id):
+        self.__id = p_id
+
+    def get_fta(self):
+        return self.__id
+
+    def set_fga(self, p_id):
+        self.__id = p_id
+
+    def get_fga(self):
+        return self.__id  
 
     def set_id(self, p_id):
         self.__id = p_id
