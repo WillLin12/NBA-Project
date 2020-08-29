@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, id, name, pts, reb, ast, stls, blks, 3pm, fgm, ftm, tov):
+    def __init__(self, id, name, pts, reb, ast, stls, blks, tpm, fgm, ftm, tov):
         self.id = id
         self.name = name
         self.pts = pts
@@ -7,7 +7,7 @@ class Player:
         self.ast = ast 
         self.stls = stls
         self.blks = blks
-        self.3pm = 3pm
+        self.tpm = tpm
         self.fgm = fgm
         self.ftm = ftm 
         self.tov = tov
@@ -68,12 +68,12 @@ class Player:
 		this.blks = blks;
 	}
 
-	public = get3pm() {
-		return this.3pm;
+	public = getTpm() {
+		return this.tpm;
 	}
 
-	public void set3pm(= 3pm) {
-		this.3pm = 3pm;
+	public void setTpm(= tpm) {
+		this.tpm = tpm;
 	}
 
 	public = getFgm() {
@@ -99,6 +99,5 @@ class Player:
 	public void setTov(= tov) {
 		this.tov = tov;
 	}
-
 
 
