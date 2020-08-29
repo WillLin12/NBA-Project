@@ -1,6 +1,6 @@
 class Player:
 
-    def __init__(self, p_id, name, pts, reb, ast, stls, blks, tpm, fgm, ftm, tov):
+    def __init__(self, p_id, name, pts, reb, ast, stls, blks, tpm, fgm, ftm, tov, fga, fta):
         self.__id = p_id 
         self.__name = name
         self.__pts = pts
