@@ -1,7 +1,11 @@
 import csv
+import player.py as player
+players = []
 
-with open('stats.csv') as player_stats:
+with open('players.csv') as player_stats:
     csv_reader = csv.reader(player_stats, delimiter=',')
     line_count = 0
     for row in csv_reader:
-        print(row[1], row[4])
+        player = player(row[0], row[1], ...)
+
+        
