@@ -16,7 +16,8 @@ with open('playerstats.csv') as player_stats:
 
 
 for value in (sorted(dict.values(), key=operator.attrgetter("pts"))):
-    print(value.get_name(), value.get_pts())
+    print(value.get_name(), value.get_pts(), value.calculate_pct(), value.calculate_ftpct)
+
 
 # for key, value in dict.items():
 #     pid = float(key)

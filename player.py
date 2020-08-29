@@ -14,16 +14,18 @@ class Player:
         self.ftm = ftm 
         self.fta = fta
         self.tov = tov
-    
+        self.fantasy = 0
+
     def calculate_pct(self):
+        if self.fga == 0:
+            return 0 
         return self.fgm / self.fga
 
-
     def calculate_ftpct(self):
+        if self.fta == 0:
+            return 0 
         return self.ftm / self.fta
 
-
-    
     def get_id(self):
         return self.id
 
